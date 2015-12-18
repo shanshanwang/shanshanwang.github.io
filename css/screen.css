@@ -1088,6 +1088,9 @@ body>footer .photo span, .post-footer .photo span {
     position: absolute;
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
+    margin: 2px;
+    border-radius: 50%;
     top: 0;
     right: 0;
     bottom: 0;
@@ -1108,7 +1111,7 @@ body>footer .photo.circle span, .post-footer .photo.circle span {
     right: -1px;
     bottom: -1px;
     left: -1px;
-    background-size: contain;
+    background-size: cover;
 }
 
 body>footer .photo img, .post-footer .photo img {
@@ -1153,6 +1156,7 @@ body>footer #user_bio .inner, .post-footer #user_bio .inner {
     width: 62px;
     height: 62px;
     background-color: #fff;
+    background-size: cover;
     border: 1px solid rgba(33, 39, 45, 0.17);
     -webkit-border-radius: 60px;
     -moz-border-radius: 60px;
@@ -1175,9 +1179,11 @@ body>footer #user_bio .inner, .post-footer #user_bio .inner {
 #blog_badge span {
     font-size: 1px;
     color: transparent;
-    background-size: contain;
+    border-radius: 50%;
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    margin: 2px;
     position: absolute;
     top: -1px;
     right: -1px;
@@ -1598,15 +1604,9 @@ body.touch.user article .readmore {
     }
     #blog_badge {
         top: 14px;
-        right: 10px;
-        width: 43px;
-        height: 43px
+        right: 10px
     }
     #blog_badge span {
-        top: 9px;
-        right: 9px;
-        bottom: 9px;
-        left: 9px;
     }
     html[dir=rtl] #blog_badge span {
         margin-left: 0;
